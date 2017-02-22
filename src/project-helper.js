@@ -79,6 +79,11 @@ export const add = (config) => {
       default: 'no',
       before: util.toBoolean,
     },
+    forceReconnect: {
+      description: 'Should sicksync force reconnect on "close"?',
+      default: 'no',
+      before: util.toBoolean,
+    },
   };
 
   if (_.isUndefined(config.debug)) {
